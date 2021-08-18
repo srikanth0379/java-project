@@ -4,7 +4,7 @@ trigger:
 - master
 
 pool:
-  vmImage: jenkins-vm
+  vmImage: 'jenkins-vm'
 
 steps:
 - task: Maven@3
