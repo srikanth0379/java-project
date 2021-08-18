@@ -31,6 +31,6 @@ steps:
     azureSubscription: 'Visual Studio Enterprise Subscription (7377b726-541f-4227-a581-517cdd4dbc1d)'
     appType: 'webAppLinux'
     WebAppName: 'samplevm'
-    packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.jar'
+    packageForLinux: '$(System.DefaultWorkingDirectory)/**/drop/target/*.jar'
     RuntimeStack: 'TOMCAT|8.5-jre8'
     StartupCommand: 'java -cp target/jb-hello-world-maven-0.1.0.jar hello.HelloWorld'
