@@ -15,7 +15,7 @@ pipeline{
                 }
             }
         }
-        stage('Run for project'){
+        stage('Running Build for project'){
             steps{
                 script {
 		    sh "mvn clean install"
